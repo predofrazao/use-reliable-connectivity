@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "jsx": "react",
+    "skipLibCheck": false,
+    "lib": ["es2016", "dom"],
+    "target": "es2020",
+    "allowSyntheticDefaultImports": true,
+    "declaration": true
+  },
+  "include": ["src", "types"],
+  "exclude": ["node_modules", "example"]
+}
