@@ -85,3 +85,9 @@ const connectionConfig: ConnectionConfig = {
   },
 };
 ```
+
+### Why would I care with background/foreground changes?
+
+Handling background can benefit users by saving resources, since the checking frequency generally doesn't need to be the same as when the application is on foreground.
+
+You can apply any logic you want, but the mainly idea is to increase the reachability check interval.
