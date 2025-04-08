@@ -10,7 +10,7 @@ Liked it? You can show your support with a star ⭐! :)
 
 While working on our company's app, we encountered some issues using `react-native-netinfo`, that relies on native APIs to detect connectivity, which was reporting false offline states on some devices. Unusual behaviors like these are difficult to track (especially in native applications) and was causing our app to incorrectly enter offline mode, disrupting the user experience.
 
-To solve this, I decided to create a "primitive but reliable" way to check user's connectivity based on HTTP requests. This approach is simples yet reliable, as it tests actual connectivity rather than relying on device-level network status.
+To solve this, I decided to create a "primitive but reliable" way to check user's connectivity based on HTTP requests. This approach is simple yet reliable, as it tests actual connectivity rather than relying on device-level network status.
 By sharing this library, I hope to help others developers who need accurate online/offline detection in their projects.
 
 ## How to use it?
