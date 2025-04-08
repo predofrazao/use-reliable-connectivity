@@ -19,7 +19,7 @@ You can use the hook in this way:
 
 ### Requirements
 
-- The only requirement is that your application should be running on `react@^16.0.0`.
+- The only requirement is that your application should be running on `React >= 16.0.0`.
 
 ### Install
 
