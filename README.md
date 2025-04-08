@@ -91,3 +91,31 @@ const connectionConfig: ConnectionConfig = {
 Handling background can benefit users by saving resources, since the checking frequency generally doesn't need to be the same as when the application is on foreground.
 
 You can apply any logic you want, but the mainly idea is to increase the reachability check interval.
+
+## Measuring Resources
+
+Let's do some math! To calculate how much resource users will need with this hook you will need some data:
+
+| Variable | Description                                       |
+| -------- | ------------------------------------------------- |
+| **t**    | Time in seconds users spend on your application   |
+| **i**    | Interval in seconds between reachability requests |
+| **s**    | Size in bytes of reachability endpoint response   |
+
+Then we can calculate it:
+
+```math
+R = (t / i) * s
+```
+
+```math
+R = (300 / 2) * 184
+```
+
+```math
+R = 27.600
+```
+
+In this example we simulate an application in which users typically spend **5 minutes (or 300 seconds)**, in which we perform a reachability test every **2 seconds** on an endpoint that weighs **184 bytes (B)** _(our predefined reachability url https://clients3.google.com/generate_204 weighs 184 bytes)_.
+
+The end result is that the user will have consumed **27.600 bytes (B)** or **27.6 kilobytes (KB)**.
