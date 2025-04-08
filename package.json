@@ -1,7 +1,7 @@
 {
   "name": "use-reliable-connectivity",
   "version": "1.0.0",
-  "description": "TODO: description",
+  "description": "A (primitive but reliable) React hook to get user connection state based on network requests.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -29,11 +29,12 @@
   },
   "homepage": "https://github.com/predofrazao/use-reliable-connectivity#readme",
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": ">=16.0.0"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^12.1.2",
     "@types/react": "^19.1.0",
+    "react": "^19.1.0",
     "rollup": "^4.39.0",
     "tslib": "^2.8.1",
     "typescript": "^5.8.3"
