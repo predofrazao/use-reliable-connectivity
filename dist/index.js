@@ -1,6 +1,6 @@
 import { useRef, useState, useCallback, useEffect } from 'react';
 
-const useReliableConnectivity = ({ initialConnectionState = true, timeout = 3000, reachabilityUrl = "https://clients3.google.com/generate_204", expectedResponseStatus = [204], interval = 1000, backgroundInterval = 10000, backgroundSetup, }) => {
+const useReliableConnectivity = ({ initialConnectionState = true, timeout = 3000, reachabilityUrl = "https://clients3.google.com/generate_204", expectedResponseStatus = [204], interval = 1000, backgroundInterval = 10000, backgroundSetup, } = {}) => {
     // Refs
     const reachabilityIntervalRef = useRef(null);
     // States

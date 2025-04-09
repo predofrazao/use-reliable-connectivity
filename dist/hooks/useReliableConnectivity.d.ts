@@ -50,4 +50,4 @@ export type ConnectionConfig = {
      */
     backgroundSetup?: (backgroundHandler: BackgroundHandlerFn) => (() => void) | void;
 };
-export declare const useReliableConnectivity: ({ initialConnectionState, timeout, reachabilityUrl, expectedResponseStatus, interval, backgroundInterval, backgroundSetup, }: ConnectionConfig) => boolean;
+export declare const useReliableConnectivity: ({ initialConnectionState, timeout, reachabilityUrl, expectedResponseStatus, interval, backgroundInterval, backgroundSetup, }?: ConnectionConfig) => boolean;
