@@ -51,6 +51,12 @@ const isOnline = useReliableConnectivity();
 
   - `false`: the request was not successfully made and/or the response status was not expected on `expectedResponseStatus`. Internet is not reachable.
 
+### How to use on localhost
+
+The default reachability endpoint ([https://clients3.google.com/generate_204](https://clients3.google.com/generate_204)) and some other endpoints do not allow requests made from localhost (you will have problems with CORS policy). You can **temporarily and for testing purposes only** bypass this with CORS unblocking extensions, available in most browser stores.
+
+**Warning: Unblocking CORS can pose security risks. Only use this for development and testing purposes.**
+
 ## Configuration
 
 All configuration options are optional.
