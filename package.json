@@ -1,6 +1,6 @@
 {
   "name": "use-reliable-connectivity",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A (primitive but reliable) React hook to get user connection state based on network requests.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
