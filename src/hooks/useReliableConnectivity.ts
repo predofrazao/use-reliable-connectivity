@@ -68,7 +68,7 @@ export const useReliableConnectivity = ({
   interval = 1000,
   backgroundInterval = 10000,
   backgroundSetup,
-}: ConnectionConfig) => {
+}: ConnectionConfig = {}) => {
   // Refs
   const reachabilityIntervalRef = useRef<number | null>(null);
 
